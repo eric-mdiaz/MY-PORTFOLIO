@@ -1,0 +1,192 @@
+/* General Styles */
+
+*{
+    align-content: center;
+}
+/* Home Section */
+#home {
+    background-color: lightblue; 
+    color: black; 
+    text-align: center; 
+    padding: 100px 20px; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+#home h1 {
+    font-size: 5rem; 
+    margin-bottom: 20px; 
+    font-family: 'Dancing Script', cursive; 
+    color: black;
+}
+
+#home p {
+    font-size: 2rem; 
+}
+
+#home strong {
+    font-weight: bold; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navigation */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+}
+
+/* Sections */
+section {
+    padding: 100px 50px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h1, h2 {
+    color: white;
+}
+
+/* About Me */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    transition: background 0.3s, transform 0.3s;
+
+}
+
+.about-container:hover{
+    background: lightblue;
+    color: black;
+    transform: scale(1.1);
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid lightblue;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+/* Education */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.school {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #222;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.school:hover {
+    background: lightblue;
+    color: black;
+    transform: scale(1.1);
+}
+
+.school img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid lightblue;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skill-box {
+    background: #222;
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid lightblue;
+    transition: background 0.3s, transform 0.3s;
+    
+    /* Add flexbox to center text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-box:hover {
+    background: lightblue;
+    color: black;
+    transform: scale(1.1);
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+    margin-top: 50px;
+}
